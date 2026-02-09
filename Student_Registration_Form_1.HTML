@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+<body>
+
+<h1>Student Registration Form</h1>
+<p>Join our community and start learning today</p>
+
+<form>
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label>Full Name: *</label><br>
+        <input type="text" name="name" placeholder="Enter your full name" required><br><br>
+
+        <label>First Name: *</label><br>
+        <input type="text" name="firstname" required><br><br>
+
+        <label>Last Name: *</label><br>
+        <input type="text" name="lastname" required><br><br>
+
+        <label>Email Address: *</label><br>
+        <input type="email" name="email" placeholder="your.email@example.com" required><br><br>
+
+        <label>Phone Number:</label><br>
+        <input type="tel" name="phone" placeholder="+1-123-456-7890"><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob"><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="1" max="120"><br><br>
+
+        <label>Gender: *</label><br>
+        <input type="radio" name="gender" value="male" required> Male
+        <input type="radio" name="gender" value="female" required> Female
+        <input type="radio" name="gender" value="other" required> Other<br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Account Information</legend>
+        <label>Password: *</label><br>
+        <input type="password" name="password" placeholder="Create a strong password" required><br><br>
+
+        <label>Confirm Password: *</label><br>
+        <input type="password" name="confirmpassword" placeholder="Re-enter password" required><br><br>
+
+        <label>Username:</label><br>
+        <input type="text" name="username" placeholder="Choose a username"><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Academic Information</legend>
+        <label>Education Level: *</label><br>
+        <select name="education" required>
+            <option value="">-- Select Education Level --</option>
+            <option value="highschool">High School</option>
+            <option value="bachelor">Bachelor's Degree</option>
+            <option value="master">Master's Degree</option>
+            <option value="phd">PhD</option>
+            <option value="other">Other</option>
+        </select><br><br>
+
+        <label>College/University Name:</label><br>
+        <input type="text" name="college" placeholder="Enter your institution name"><br><br>
+
+        <label>Major/Field of Study:</label><br>
+        <input type="text" name="major" placeholder="Enter your field of study"><br><br>
+
+        <label>Skills:</label><br>
+        <input type="checkbox" name="skills" value="html"> HTML
+        <input type="checkbox" name="skills" value="css"> CSS
+        <input type="checkbox" name="skills" value="javascript"> JavaScript
+        <input type="checkbox" name="skills" value="python"> Python
+        <input type="checkbox" name="skills" value="java"> Java
+        <input type="checkbox" name="skills" value="database"> Database<br><br>
+
+        <label>Programming Languages:</label><br>
+        <input type="checkbox" name="languages" value="c"> C
+        <input type="checkbox" name="languages" value="cpp"> C++
+        <input type="checkbox" name="languages" value="csharp"> C#
+        <input type="checkbox" name="languages" value="php"> PHP
+        <input type="checkbox" name="languages" value="ruby"> Ruby<br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Location Information</legend>
+        <label>Country: *</label><br>
+        <select name="country" required>
+            <option value="">-- Select Country --</option>
+            <option value="india">India</option>
+            <option value="usa">USA</option>
+            <option value="uk">UK</option>
+            <option value="canada">Canada</option>
+            <option value="australia">Australia</option>
+            <option value="germany">Germany</option>
+            <option value="france">France</option>
+            <option value="japan">Japan</option>
+        </select><br><br>
+
+        <label>State/Province:</label><br>
+        <input type="text" name="state" placeholder="Enter your state/province"><br><br>
+
+        <label>City:</label><br>
+        <input type="text" name="city" placeholder="Enter your city"><br><br>
+
+        <label>Postal Code:</label><br>
+        <input type="text" name="postal" placeholder="Enter postal code"><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="3" cols="40" placeholder="Enter your full address"></textarea><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Professional Information</legend>
+        <label>Job Title:</label><br>
+        <input type="text" name="jobtitle" placeholder="Enter your job title"><br><br>
+
+        <label>Company Name:</label><br>
+        <input type="text" name="company" placeholder="Enter company name"><br><br>
+
+        <label>Years of Experience:</label><br>
+        <input type="number" name="experience" min="0" max="70"><br><br>
+
+        <label>Employment Status:</label><br>
+        <select name="employment">
+            <option value="">-- Select Status --</option>
+            <option value="employed">Employed</option>
+            <option value="unemployed">Unemployed</option>
+            <option value="student">Student</option>
+            <option value="freelance">Freelance</option>
+            <option value="entrepreneur">Entrepreneur</option>
+        </select><br><br>
+    </fieldset>
+
+    <fieldset>
+        <legend>Additional Information</legend>
+        <label>About You:</label><br>
+        <textarea name="about" rows="5" cols="40" placeholder="Tell us about yourself..."></textarea><br><br>
+
+        <label>Interests:</label><br>
+        <input type="text" name="interests" placeholder="Enter your interests (comma-separated)"><br><br>
+
+        <label>Languages Spoken:</label><br>
+        <input type="checkbox" name="spoken_lang" value="english"> English
+        <input type="checkbox" name="spoken_lang" value="spanish"> Spanish
+        <input type="checkbox" name="spoken_lang" value="french"> French
+        <input type="checkbox" name="spoken_lang" value="german"> German
+        <input type="checkbox" name="spoken_lang" value="hindi"> Hindi
+        <input type="checkbox" name="spoken_lang" value="chinese"> Chinese<br><br>
+
+        <label>Newsletter Subscription:</label><br>
+        <input type="radio" name="newsletter" value="yes"> Yes, subscribe me
+        <input type="radio" name="newsletter" value="no"> No, thank you<br><br>
+
+        <label>Profile Picture:</label><br>
+        <input type="file" name="picture" accept="image/*"><br><br>
+
+        <label>Resume/CV:</label><br>
+        <input type="file" name="resume" accept=".pdf,.doc,.docx"><br><br>
+
+        <label>Agree to Terms and Conditions: *</label><br>
+        <input type="checkbox" name="terms" required> I agree to the terms and conditions<br><br>
+
+        <label>Receive notifications:</label><br>
+        <input type="checkbox" name="notifications"> Email notifications
+        <input type="checkbox" name="sms"> SMS notifications
+        <input type="checkbox" name="push"> Push notifications<br><br>
+    </fieldset>
+
+    <br>
+    <input type="submit" value="Register">
+    <input type="reset" value="Clear Form">
+    <input type="button" value="Cancel" onclick="history.back()">
+
+</form>
+
+</body>
+</html>
